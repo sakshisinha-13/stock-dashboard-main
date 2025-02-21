@@ -15,7 +15,7 @@ import { convertUnixTimestampToDate } from "../utils/helpers/date-helper"
 import ThemeContext from "../context/ThemeContext";
 
 const Chart = () => {
-  const [data, setData] = useState(mockHistoricalData);
+  const [data] = useState(mockHistoricalData);
   const [filter, setFilter] = useState("1W");
   const { darkMode } = useContext(ThemeContext);
   const formatData = (data) => {
